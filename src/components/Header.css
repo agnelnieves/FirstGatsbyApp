@@ -17,6 +17,27 @@
 .header a{
     color: white;
     font-weight: 600;
+    opacity: 0;
+    animation: headerLinksAnimation;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2);
+}
+
+.header a:nth-child(2){
+    animation-delay: 0;
+}
+
+.header a:nth-child(2){
+    animation-delay: .5s;
+}
+
+.header a:nth-child(3){
+    animation-delay: 1s;
+}
+
+.header a:nth-child(4){
+    animation-delay: 1.5s;
 }
 
 .header button{
@@ -28,6 +49,13 @@
     border-radius: 10px;
     outline: none;
     cursor: pointer;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.header button:hover {
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-4px);
 }
 
 @media (max-width: 600px){
