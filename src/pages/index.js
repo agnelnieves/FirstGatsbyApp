@@ -1,28 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Card from '../components/Card'
+import Card from '../components/Card';
 
 const IndexPage = () => (
   <div>
-    <div className="hero">
-      <div className="hero__group">
-        <h1>First take on using react and Gatsby</h1>
-        <p>I think it's awesome so far, I'll try to use it more often.</p>
-        <Link to="/page-2/">Go to page 2</Link>
+  <div className="hero">
+    <div className="hero__group">
+    <h1>First take on using react and Gatsby</h1>
+    <p>I think it's awesome so far, I'll try to use it more often.</p>
+    <Link to="/page-2/">Go to page 2</Link>
 
-        <svg
-          width="100%"
-          height="172"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path fill="white">
-            <animate
-              repeatCount="indefinite"
-              fill="freeze"
-              attributeName="d"
-              dur="18s"
-              values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
+
+        <svg width="100%" height="172" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill="white">
+    <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="18s" values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
 
     M0 87.1596C316 87.1597 444 160 884 52.0001C1324 -55.9999 1320.29 34.966 1538 71.251C1814 117.251 2156 189.252 2560 87.1597V233.161L0 233.161V87.1596Z;
 
@@ -30,49 +21,47 @@ const IndexPage = () => (
 
     M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z
 
-    "
-            />
-          </path>
-        </svg>
-      </div>
-    </div>
-    <div className="Cards">
-    <h2>Cards section</h2>
+    "/></path>
+    </svg>
 
-    <div className="CardGroup">
-      <Card
-        title="Card 1"
-        text="Text content"
-        image={require('../images/bg3.jpg')}
-      />
-      <Card
-        title="Card 1"
-        text="Text content"
-        image={require('../images/bg3.jpg')}
-      />
-      <Card
-        title="Card 1"
-        text="Text content"
-        image={require('../images/bg3.jpg')}
-      />
-      <Card
-        title="Card 1"
-        text="Text content"
-        image={require('../images/bg3.jpg')}
-      />
-      <Card
-        title="Card 1"
-        text="Text content"
-        image={require('../images/bg3.jpg')}
-      />
-      <Card
-        title="Card 1"
-        text="Text content"
-        image={require('../images/bg3.jpg')}
-      />
-    </div>
+
     </div>
   </div>
+  <h2>Cards section</h2>
+
+  <div className="CardGroup">
+
+    <Card
+      image={require('../images/bg3.jpg')}
+      title="Title"
+      text="text"
+    />
+    <Card
+      image={require('../images/bg3.jpg')}
+      title="Title"
+      text="text"
+    />
+    <Card
+      image={require('../images/bg3.jpg')}
+      title="Title"
+      text="text"
+    />
+    <Card
+      image={require('../images/bg3.jpg')}
+      title="Title"
+      text="text"
+    />
+    <Card
+      image={require('../images/bg3.jpg')}
+      title="Title"
+      text="text"
+    />
+
+
+  </div>
+
+  </div>
 )
+
 
 export default IndexPage
