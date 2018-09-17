@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Card from '../components/Card'
-import Section from '../components/Section';
-import Wave from '../components/Waves';
+import Card from '../components/card'
+import Section from '../components/section';
+import Wave from '../components/waves';
 import staticdata from '../../staticdata.json'
-import Cell from '../components/Cell';
+import Cell from '../components/cell';
 import styled from 'styled-components'
 
 const SectionCaption = styled.h2`
