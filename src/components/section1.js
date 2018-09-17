@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Wave from './Waves';
+import Wave from './waves1';
 
 const SectionGroup = styled.div`
     background: url(${props => props.image});
