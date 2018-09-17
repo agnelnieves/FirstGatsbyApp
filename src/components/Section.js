@@ -15,7 +15,7 @@ const SectionGroup = styled.div`
         height: 820px;;
     }
 `
-
+//
 const SectionLogo = styled.img`
     align-self: end;
     width: 120px;
